@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\LENOVO\OneDrive\Desktop\Imarticus\Calories Burnt Prediction\staticFiles\style.css">
+    <title> CALORIES BURNT PREDICTION </title>
+    
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post" class="f">
+        
+        <h1> <b> CALORIES BURNT PREDICTION </b> </h1>
+        <h3> Gender 
+        <select name="Gender" id="abc" required="required">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        </h3>
+        
+        <br> 
+        <input class="abcd" type="number" placeholder="Age" name="CallStart" required="required"> 
+        <br> <br>
+        <input class="abcd" type="number" placeholder="Height" name="CallEnd" required="required">
+        <br> <br>
+        <input class="abcd" type="number" placeholder="Weight" name="CallStart" required="required"> 
+        <br> <br>
+        <input class="abcd" type="number" placeholder="Duration" name="CallEnd" required="required">
+        <br> <br>
+        <input class="abcd" type="number" placeholder="Heart Rate" name="CallStart" required="required"> 
+        <br> <br>
+        <input class="abcd" type="number" placeholder="Body Temperature" name="CallEnd" required="required">
+        
+
+
+
+        <br>
+        <br>
+        <br>
+        <button id="sub" type="submit"> Prediction </button>
+        <br>
+
+    </form>
+    <br>
+    <br>
+    <div class="f">  {{ prediction_text }} </div>
+   
+
+</body>
+</html>
